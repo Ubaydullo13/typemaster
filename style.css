@@ -1,0 +1,412 @@
+:root {
+    --clr-700: #162542;
+    --clr-300: #f16718;
+    --clr-200: #7b8bad;
+    --clr-100: #fff;
+  
+    --fs-h1: 4.8rem;
+    --fs-h1-desktop: 5.6rem;
+    --fs-h2: 2.4rem;
+  
+    --lh-h1: 100%;
+    --lh-h2: 112%;
+  
+    --fw-regular: 500;
+    --fw-bold: 700;
+    --fw-bolder: 900;
+  }
+  
+  html {
+    font-size: 62.5%;
+    overflow-x: hidden;
+  }
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  body {
+    font-family: "Barlow", sans-serif;
+    font-size: 16px;
+    line-height: 26px;
+    line-height: 162%;
+    color: var(--clr-200);
+    font-weight: var(--fw-regular);
+    overflow-x: hidden;
+  }
+  h1,
+  h2 {
+    color: var(--clr-700);
+    font-weight: var(--fw-bolder);
+    text-transform: uppercase;
+  }
+  h4 {
+    font-weight: var(--fw-bold);
+    text-transform: uppercase;
+  }
+  h2 {
+    line-height: var(--lh-h2);
+  }
+  .flexbox {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 3.2rem;
+  }
+  .flexbox-order {
+    display: flex;
+    align-items: center;
+    gap: 3.2rem;
+  }
+  .flexbox-column {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 3.2rem;
+  }
+  .container {
+    padding: 2.4rem 2.4rem 4.8rem 2.4rem;
+  }
+  .container-layout {
+    padding: 0;
+  }
+  
+  /* HEADER */
+  header {
+    margin-bottom: 6.4rem;
+  }
+  header h4 {
+    text-transform: uppercase;
+    padding: 1.1rem 1.4rem;
+    background: #e8eff2;
+    border-radius: 8px;
+    color: var(--clr-700);
+  }
+  /* CTA */
+  .CTA {
+    margin-bottom: 6.4rem;
+  }
+  h1 {
+    font-size: var(--fs-h1);
+    line-height: var(--lh-h1);
+    text-transform: uppercase;
+  }
+  .pre-order {
+    padding: 1.1rem 1.4rem;
+    text-transform: uppercase;
+    color: var(--clr-100);
+    background: var(--clr-300);
+    border-radius: 8px;
+  }
+  .release {
+    text-transform: uppercase;
+  }
+  .bg-keyboard {
+    background-image: url(images/mobile/hero-top.png);
+    width: max(372px, 100%);
+    height: 331px;
+    border-radius: 20px;
+    object-fit: cover;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .gray-block {
+    display: none;
+  }
+  .gray-block-2 {
+    display: none;
+  }
+  /* PREVIEW */
+  .preview {
+    text-align: center;
+    margin-top: 2.4rem;
+    margin-bottom: 11rem;
+  }
+  .text-box-flex {
+    display: flex;
+    flex-direction: column;
+    gap: 2.4rem;
+  }
+  .img-box-flex {
+    display: flex;
+    gap: 2.4rem;
+    justify-content: right;
+  }
+  .keyboard-phone {
+    background-image: url(images/mobile/hero-1.png);
+    border-radius: 20px;
+    background-color: var(--clr-300);
+    background-blend-mode: multiply;
+    width: max(129px, 39%);
+    height: 193px;
+    background-size: cover;
+    flex-shrink: 0;
+  }
+  .keyboard-glass {
+    background-image: url(images/mobile/hero-2.png);
+    border-radius: 20px;
+    width: max(220px, 65%);
+    height: 193px;
+    background-size: cover;
+    flex-shrink: 0;
+  }
+  .text-box {
+    margin-top: 7.5rem;
+  }
+  .text-box h2 {
+    font-size: 3.2rem;
+    line-height: var(--lh-h2);
+    margin-inline: 6rem;
+  }
+  /* FEATURES */
+  .features {
+    margin-bottom: 9.6rem;
+    display: flex;
+    flex-direction: column;
+    gap: 6.4rem;
+    justify-content: space-between;
+  }
+  .box {
+    display: flex;
+    flex-direction: column;
+    gap: 2.4rem;
+    text-align: center;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .box img {
+    margin-bottom: 2.4rem;
+  }
+  .box h2 {
+    line-height: 117%;
+  }
+  /* FOOTER */
+  span {
+    font-weight: var(--fw-bold);
+  }
+  footer {
+    text-align: center;
+  }
+  header a:link,
+  header a:visited {
+    color: var(--clr-700);
+    text-decoration: none;
+  }
+  section a:link,
+  section a:visited {
+    color: var(--clr-100);
+    text-decoration: none;
+  }
+  @media screen and (min-width: 768px) {
+    .container {
+      padding: 4rem;
+    }
+    /* HEADER */
+    header h4 {
+      padding: 1.6rem 2.6rem;
+    }
+    .CTA {
+      margin-bottom: unset;
+    }
+    .pre-order {
+      padding: 1.6rem 2.6rem;
+    }
+    .keyboard {
+      display: none;
+    }
+    .flexbox-column {
+      gap: 3.6rem;
+    }
+    .tablet-layout {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 6.9rem;
+    }
+    .tablet-layout .CTA {
+      width: 339px;
+      flex-shrink: 0;
+    }
+    .bg-keyboard {
+      width: max(478px, 64%);
+      height: 425px;
+      background-image: url(images/tablet/hero-top.png);
+      background-repeat: no-repeat;
+      background-size: cover;
+      flex-shrink: 0;
+      border-radius: 16px;
+    }
+    /* PREVIEW */
+    .preview {
+      text-align: start;
+      margin-top: 4rem;
+      margin-bottom: 14rem;
+    }
+    .text-box-flex {
+      display: flex;
+      flex-direction: row;
+      gap: 5rem;
+      align-items: center;
+      justify-content: space-between;
+    }
+    .img-box-flex {
+      gap: 3rem;
+      justify-content: space-between;
+    }
+    .keyboard-phone {
+      background-image: url(images/tablet/hero-1.png);
+      width: max(214px, 31%);
+      height: 320px;
+    }
+    .keyboard-glass {
+      background-image: url(images/tablet/hero-2.png);
+      width: max(445px, 64%);
+      height: 320px;
+    }
+    .text-box {
+      margin-top: 7rem;
+    }
+    .text-box h2 {
+      margin-inline: unset;
+    }
+    /* FEATURES */
+    .features {
+      margin-bottom: 14rem;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 7rem;
+      justify-content: space-between;
+      margin-right: 4.8rem;
+      justify-items: center;
+    }
+    .box {
+      display: flex;
+      flex-direction: column;
+      gap: 2.4rem;
+      text-align: start;
+      justify-content: space-between;
+      align-items: start;
+      max-width: 285px;
+    }
+    .box img {
+      margin-bottom: 1.6rem;
+    }
+  }
+  @media screen and (min-width: 1440px) {
+    .container {
+      padding: 5.5rem 16.5rem 4rem 16.5rem;
+    }
+    h1 {
+      font-size: var(--fs-h1-desktop);
+    }
+    /* HEADER */
+    header {
+      margin-bottom: 8.3rem;
+    }
+    .flexbox-column {
+      gap: 2.4rem;
+    }
+    .flexbox-order {
+      margin-top: 1.6rem;
+    }
+    .tablet-layout {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 12.5rem;
+      position: relative;
+    }
+    .tablet-layout .CTA {
+      width: max(445px);
+      flex-shrink: 0;
+    }
+    .bg-keyboard {
+      width: max(540px, 46%);
+      height: 480px;
+      background-image: url(images/desktop/hero-top.png);
+      flex-grow: 1;
+    }
+    .gray-block {
+      display: block;
+      position: absolute;
+      top: 0;
+      right: -170px;
+    }
+    /* PREVIEW */
+    .preview {
+      margin-top: 3rem;
+      margin-bottom: 16.8rem;
+      display: flex;
+      gap: 12.5rem;
+      align-items: center;
+      justify-content: space-between;
+      position: relative;
+    }
+    .text-box-flex {
+      flex-direction: column;
+      gap: 2.7rem;
+      align-items: start;
+      justify-content: start;
+      width: 255px;
+    }
+    .img-box-flex {
+      gap: 3rem;
+      justify-content: space-between;
+      flex-grow: 1;
+    }
+    .keyboard-phone {
+      background-image: url(images/desktop/hero-1.png);
+      width: max(255px, 34%);
+      height: 480px;
+    }
+    .keyboard-glass {
+      background-image: url(images/desktop/hero-2.png);
+      width: max(445px, 61%);
+      height: 480px;
+    }
+    .text-box {
+      margin-top: 7rem;
+    }
+    .gray-block-2 {
+      display: block;
+      position: absolute;
+      bottom: 0;
+      left: -170px;
+    }
+    /* FEATURES */
+    .features {
+      margin-bottom: 12.8rem;
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+      gap: 3rem;
+      justify-content: space-between;
+      margin-right: unset;
+      justify-items: center;
+    }
+    .box {
+      display: flex;
+      flex-direction: column;
+      gap: 2.4rem;
+      text-align: start;
+      justify-content: space-between;
+      align-items: start;
+      max-width: 285px;
+    }
+    .box img {
+      margin-bottom: 2.4rem;
+    }
+    header h4:hover {
+      cursor: pointer;
+      background: var(--clr-700);
+      transition: 0.5s ease-in-out;
+    }
+    header h4:hover a {
+      color: var(--clr-100);
+      transition: 0.5s ease-in-out;
+    }
+    .pre-order:hover {
+      cursor: pointer;
+      background: #ff9b62;
+      transition: 0.4s ease-in-out;
+    }
+  }
